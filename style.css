@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 100%;
+}
+
+.card {
+    min-width: 600px;
+    width: 30%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left {
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right {
+    width: 50%;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.item-category {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 38px;
+    color: hsl(212, 21%, 14%);
+}
+
+.discripthion {
+    width: 85%;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 0;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:641px) and (max-width:768px) {
+    .card {
+        max-width: 600px;
+    }
+}
+
+
+@media only screen and (max-width:640px) {
+
+
+    .card {
+        min-width: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .left {
+        width: 100%;
+        height: 350px;
+        background-image: url(images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right {
+        width: 100%;
+        row-gap: 12px;
+        padding: 25px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .item-category {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .discripthion {
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.7;
+        font-size: 12px;
+    }
+
+    button {
+        margin: 10px;
+    }
+}
