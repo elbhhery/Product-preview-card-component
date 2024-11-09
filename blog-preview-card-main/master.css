@@ -1,0 +1,67 @@
+* {
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+   background-color:yellow;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top:100px ;
+}
+
+.container {
+    background-color: white;
+    width: 335px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow:10px 10px 0px black ;
+}
+
+.main-img img{
+    border-radius: 10px;
+}
+
+.learn {
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    padding: 5px;
+    width: 65px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.main-heading {
+    font-size: 25px;
+    color: yellow;
+}
+
+.main-heading a {
+    text-decoration: none;
+    color:hsl(47, 88%, 63%) ;
+}
+
+p {
+    width: 310px;
+    font-size: 15px;
+    color: hsl(0, 0%, 42%);
+}
+
+p img {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar {
+    display: flex;
+}
+
+.name {
+    margin-left: 20px;
+    margin-top: 20px;
+}
